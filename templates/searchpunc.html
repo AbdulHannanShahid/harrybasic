@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Hello</title>
+    </head>
+    <body>
+        <h1>template is working</h1>
+        <form action='searchpunc/' method='POST'>
+        {% csrf_token %}
+            <h1>Your result after performing action - {{punctuation}}</h1>
+        </form>
+        
+    </body>
+</html>

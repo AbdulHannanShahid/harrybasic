@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Hello</title>
+    </head>
+    <body>
+        <h1>template is working</h1>
+        <form action='searchpunc/' method='POST'>
+        {% csrf_token %}
+            <textarea name='title'></textarea><br>
+            <input type = 'checkbox' name = 'ckbox'>Check for remove punctuations</input><br>
+            <input type = 'checkbox' name = 'ckbox1'>For change your text in upper_case</input><br>
+            <input type = 'checkbox' name = 'ckbox2'>For Your Character Count</input><br>
+            <button type = 'submit'>Show my text</button>
+        </form>
+        
+    </body>
+</html>
